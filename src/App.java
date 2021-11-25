@@ -19,7 +19,7 @@ public class App {
     }
 }
 
-/**
+/** This is additional text.
  * implement a stack
  *      - each element in the stack should hold the bracket character and the index of the bracket
  * 
