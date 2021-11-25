@@ -1,1 +1,1 @@
-Files are in the `src` folder.
+Source files are in the `src` folder.
