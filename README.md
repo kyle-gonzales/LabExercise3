@@ -1,11 +1,6 @@
 Source files are in the `src` folder.
 
-# Algorithm
 
-1. Take input from user.
-2. Create a new BracketsChecker object.
-   - Initialized by converting the string to a list of String items
-3. checkBrackets()
 
 ## checkBrackets() alg
 
@@ -23,3 +18,9 @@ Source files are in the `src` folder.
         print success
     else:
         print the index of the first unmatched opening bracket by popping out all the other brackets from the stack until one is left.
+
+###
+    Take input from user.
+    Create a new BracketsChecker object.
+      //Initialized by converting the string to a list of String items
+    checkBrackets()
