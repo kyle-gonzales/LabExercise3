@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Stack s = new Stack();
+        Max.Stack s = new Max.Stack();
 
 
         try (//* main function5
