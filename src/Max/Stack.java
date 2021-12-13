@@ -20,25 +20,25 @@ public class Stack implements Iterable<Integer>, Comparable<Integer> {
         return size() == 0;
     }
 
-    public void push(Integer elem) {
+    public void push(Integer elem) { //modified for maxStack operation
         list.addLast(elem);
         if (list.size() == 1) {
-            trackStack.push(elem);
+            trackStack.addLast(elem);
             return;
         }
 
-        if (trackStack.peek() < elem) trackStack.push(elem);
-        else trackStack.push(trackStack.peek());
+        if (elem > trackStack.peekLast()) trackStack.addLast(elem);
+        else trackStack.addLast(trackStack.peekLast());
     }
 
     public int max() {
-        return trackStack.peek();
+        return trackStack.peekLast();
     }
 
     public Integer pop() {
         if (isEmpty())
             throw new java.util.EmptyStackException();
-        trackStack.removeLast();
+        int x = trackStack.removeLast(); //garbage variable
         return list.removeLast();
 
     }
@@ -56,7 +56,7 @@ public class Stack implements Iterable<Integer>, Comparable<Integer> {
     public int compareTo(Integer elem) {
         if (trackStack.peek() == elem) return 0;
         else if (trackStack.peek() > elem) return 1;
-        return -1;
+        return 10000;
     }
 
 }
