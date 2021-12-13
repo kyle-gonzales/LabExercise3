@@ -1,3 +1,5 @@
+package Brackets;
+
 public class BracketsChecker {
     private Stack<Node> bStack = new Stack<>();
     private String[] bString;

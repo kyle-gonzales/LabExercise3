@@ -1,3 +1,5 @@
+package Brackets;
+
 public class Node {
     public String bracket = null;
     public int index;
